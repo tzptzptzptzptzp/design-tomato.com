@@ -1,0 +1,6 @@
+.vscode
+node_modules
+dist.zip
+tmt-imgのエイリアス
+*.map
+*.js.LICENSE.txt
