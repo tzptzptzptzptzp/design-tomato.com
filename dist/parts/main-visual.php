@@ -17,5 +17,4 @@
         </div>
     </div>
 </div><!-- .p-main-visual -->
-<script type="module" defer>let m=document.querySelector(".p-main-visual__video");let b=document.querySelector(".p-infomation-bar").clientHeight;let l=document.querySelector(".splide").clientHeight;m.style.height=(window.innerHeight-(l/2)-b)+"px";</script>
 <script type="module" async>let c=window.innerHeight<window.innerWidth||959<=window.innerWidth;let v=document.querySelector(".p-main-visual__video");let s=null;let p=null;if(c){s=v.dataset.srcPc;p=v.dataset.posterPc}else{s=v.dataset.srcSp;p=v.dataset.posterSp};addEventListener("DOMContentLoaded",function(){v.poster=p});addEventListener("load",function(){v.src=s})</script>
