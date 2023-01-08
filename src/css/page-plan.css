@@ -139,8 +139,7 @@ img {
 }
 .l-wrapper::after {
   z-index: -7;
-  -webkit-animation: color-change 25s linear infinite;
-          animation: color-change 25s linear infinite;
+  background-color: #4D95FF;
   filter: opacity(0.5);
 }
 

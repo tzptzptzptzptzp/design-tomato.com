@@ -93,7 +93,7 @@ img {
     }
     &::after {
         z-index: -7;
-        animation: color-change 25s linear infinite;
+        background-color: #4D95FF;
         filter: opacity(.5);
     }
 }
