@@ -8,9 +8,9 @@
                     $cat_posts = get_posts(array(
                         'post_type' => 'post',
                         'category_name' => 'pro, standard',
-                        'posts_per_page' => 4,
+                        'posts_per_page' => 5,
                         'orderby' => 'date',
-                        'order' => 'DESC'
+                        'order' => 'rand'
                     ));    
                 } else {
                     $cat_posts = get_posts(array(
@@ -18,7 +18,7 @@
                         'category_name' => 'pro, standard',
                         'posts_per_page' => 8,
                         'orderby' => 'date',
-                        'order' => 'DESC'
+                        'order' => 'rand'
                     ));    
                 }
                 global $post;
@@ -37,5 +37,4 @@
     </div>
     <ul class="splide__pagination pt-4"></ul>
 </div><!-- #mainSlider -->
-
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/splide.js" type="module" async></script>
