@@ -1,5 +1,7 @@
 import * as loader from "./module/loader"
 addEventListener("load", loader.loaded);
+import * as soda from "./module/soda"
+addEventListener("load", soda.init);
 import * as header from "./module/header"
 addEventListener("scroll", header.active);
 import * as menu from "./module/menu"

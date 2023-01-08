@@ -1,3 +1,6 @@
-<div id="soda" class="p-soda__container fixed top-0 w-full -z-5 h-screen pointer-events-none"></div>
-<style>@keyframes sodafloat {0%{bottom:0}10%{transform:translateX(5px)}25%{transform:translateX(-5px)}55%{transform:translateX(5px)}80%{transform:translateX(-5px)}100%{bottom:100vh}}#soda .particle{display:block;position:absolute;opacity:.7;border:2px solid white;border-radius: 999px;animation:sodafloat 5s linear}</style>
-<script type="module" defer>let s=document.getElementById("soda");const c=()=>{let p=document.createElement("span");p.className="particle";let n=20;let x=25;let cs=Math.random()*(n-x)+n;p.style.width=cs+"px";p.style.height=cs+"px";p.style.left=Math.random()*100+"%";s.appendChild(p);setTimeout(()=>{p.remove()},5000);};setInterval(c,500);</script>
+<style>@keyframes sodafloat {0%{bottom:0}10%{transform:translateX(5px)}25%{transform:translateX(-5px)}55%{transform:translateX(5px)}80%{transform:translateX(-5px)}100%{bottom:100vh}}#soda span{display:block;position:absolute;bottom:-30px;opacity:.7;border:2px solid white;border-radius:999px;background:rgba(255,255,255,.2);animation:sodafloat 5s linear infinite}</style>
+<div id="soda" class="p-soda__container fixed top-0 w-full -z-5 h-screen pointer-events-none">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
