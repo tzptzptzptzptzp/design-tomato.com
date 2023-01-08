@@ -9,16 +9,16 @@
                         'post_type' => 'post',
                         'category_name' => 'pro, standard',
                         'posts_per_page' => 5,
-                        'orderby' => 'date',
-                        'order' => 'rand'
+                        'orderby' => 'rand',
+                        'order' => 'DESC'
                     ));    
                 } else {
                     $cat_posts = get_posts(array(
                         'post_type' => 'post',
                         'category_name' => 'pro, standard',
                         'posts_per_page' => 8,
-                        'orderby' => 'date',
-                        'order' => 'rand'
+                        'orderby' => 'rand',
+                        'order' => 'DESC'
                     ));    
                 }
                 global $post;
