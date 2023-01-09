@@ -115,7 +115,7 @@
                             <div class="c-balloon vertical balloon-xl m-auto mb-16">
                                 <picture>
                                     <source data-srcset="<?php echo get_template_directory_uri(); ?>/assets/images/bisyojo_chan.webp" type="image/webp" />
-                                    <img class="lazyload object-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/bisyojo_chan.jpg" alt="美少女ちゃん" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+                                    <img class="lazyload object-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/images/bisyojo_chan.jpg" alt="美少女ちゃん" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="75" height="75" />
                                 </picture>
                                 <p class="bg-sub text-white text-center">様々なニーズに合わせて<br class="ml:hidden">最適なデザインを提案します！<span class="bg-sub"></span></p>
                             </div>
