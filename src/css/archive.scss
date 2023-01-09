@@ -78,6 +78,7 @@
     &__title {
         margin-bottom: 1rem;
         font-size: 2.2rem;
+        line-height: 1.2;
     }
     &__time {
         &::before {
@@ -120,14 +121,21 @@
 @media screen and (max-width: 599px) {
     .p-site {
         &__column {
-            width: calc(50% - 1rem);
-            margin: .5rem;
+            margin: 0 .5rem 1rem;
         }
     }
     .c-post {
+        margin-bottom: 1rem;
         &__head {
             width: 100%;
             padding: .8rem;
+        }
+        &__title, &__excerpt {
+            display: -webkit-box;
+            overflow: hidden;
+            margin-bottom: .5rem;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
         }
     }
     .c-headline {

@@ -509,6 +509,7 @@ header .waves {
 .c-post__title {
   margin-bottom: 1rem;
   font-size: 2.2rem;
+  line-height: 1.2;
 }
 .c-post__time::before {
   display: inline-block;
@@ -544,12 +545,21 @@ header .waves {
 }
 @media screen and (max-width: 599px) {
   .p-site__column {
-    width: calc(50% - 1rem);
-    margin: 0.5rem;
+    margin: 0 0.5rem 1rem;
+  }
+  .c-post {
+    margin-bottom: 1rem;
   }
   .c-post__head {
     width: 100%;
     padding: 0.8rem;
+  }
+  .c-post__title, .c-post__excerpt {
+    display: -webkit-box;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
   .c-headline img {
     max-height: 70px;

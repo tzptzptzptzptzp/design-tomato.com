@@ -2,7 +2,7 @@
     Theme Name: designTomato
     Theme URI: https://design-tomato.com
     Description: Web制作会社"DESIGN TOMATO"のWordPressテーマです。ポップで楽しいデザインになっています。
-    Version: 1.5.3
+    Version: 1.5.4
     Author: てづっぴ
     Author URI: https://xn--j9jdc2d.jp/
     Tags: pop, tomato, colorful, red, green,
@@ -29,4 +29,5 @@
     1.5.1 背景色アニメーションが高負荷のため、単色に変更
     1.5.2 メインビジュアル部の動画の高さを65vhで固定 それに伴ってJavaScriptを削除
     1.5.3 スライダーに表示される投稿を"ランダム"で取得するように変更
+    1.5.4 アーカイブページの表示を変更 それに伴ったスタイルの追加・削除
 */
