@@ -1,6 +1,8 @@
 ![DESIGN TOMATO](ScreenShot.jpg)
 # Wordpress theme by DesignTomato
 ## テーマ概要
+＞ [DESIGN TOMATO](https://design-tomato.com/)
+
 このWordPressテーマは自身が運営しているWeb制作会社『DESIGN TOMATO』の専用テーマです。
 
 Webからの制作依頼を受け付ける窓口としてこのサイトを制作しました。
@@ -8,8 +10,6 @@ Webからの制作依頼を受け付ける窓口としてこのサイトを制�
 内部SEOやパフォーマンスUP以外にも、デザインにこだわって制作しています。
 
 ポップで楽しくなるような華やかなデザインにしました。
-
-＞ [DESIGN TOMATO](https://design-tomato.com/)
 
 &nbsp;
  - - -
@@ -32,9 +32,10 @@ Webからの制作依頼を受け付ける窓口としてこのサイトを制�
 ### その他
 - CSSフレームワーク > TailWindCSS
 - CSS設計 > FLOCSS
-- CSSプロパティ記述順 > [mozilla.org Base Styles](https://qiita.com/akuden/items/e9c91a7a2b0596d53fd1)
+- CSSプロパティ記述順 > [mozilla.org Base Styles](https://qiita.com/akuden/items/e9c91a7a2b0596d53fd1) (視覚順)
 - Webpack
 - Git / GitHub
+- Gitmoji
 
 &nbsp;
  - - -
