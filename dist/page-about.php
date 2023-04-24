@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                             <div class="custom-ex">
-                            <div class="flex s:flex-col">
+                                <div class="flex s:flex-col">
                                     <p>名称</p>
                                     <p class="s:hidden">DesignTomato / デザイントマト</p>
                                     <p class="ml:hidden">DesignTomato<br>デザイントマト</p>
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        <style>.p-content .custom-columns * {margin:0}.custom-columns{display:flex;width:100%;padding:5rem 0}.custom-columns:not(:last-of-type){border-bottom:1px solid rgba(0,0,0,.3)}.custom-title{display:flex;align-items:center;width:25%}.custom-title p{padding-left:7px;border-left:3px solid var(--font-color)}.custom-ex{width:75%}.custom-ex p:not(:last-child){margin-bottom:3rem;}.custom-ex .flex p:first-child{width:25%;margin-bottom:2rem!important;text-align:center}@media screen and (max-width:599px){.custom-columns{flex-direction:column;}.custom-title{width:100%;margin-bottom:2rem!important;text-align:center}.custom-title div, .custom-ex{width:100%}.custom-title p{border:none}.custom-ex .flex p{width:100%!important;margin-bottom:2rem;text-align: center}.custom-ex .flex p:first-child{margin-bottom:0rem!important;font-size:1.2em}}</style>
+                        <style>.p-content .custom-columns * {margin:0}.custom-columns{display:flex;width:100%;padding:5rem 0}.custom-columns:not(:last-of-type){border-bottom:1px solid rgba(0,0,0,.3)}.custom-title{display:flex;align-items:center;width:25%}.custom-title p{padding-left:7px;border-left:3px solid var(--font-color)}.custom-ex{width:75%}.custom-ex p:not(:last-child){margin-bottom:3rem;}.custom-ex p.s\:hidden{margin-bottom:0}.custom-ex .flex p:first-child{width:25%;margin-bottom:2rem!important;text-align:center}@media screen and (max-width:599px){.custom-columns{flex-direction:column;}.custom-title{width:100%;margin-bottom:2rem!important;text-align:center}.custom-title div, .custom-ex{width:100%}.custom-title p{border:none}.custom-ex .flex p{width:100%!important;margin-bottom:2rem;text-align: center}.custom-ex .flex p:first-child{margin-bottom:0rem!important;font-size:1.2em}}</style>
 
                     </div>
                 </article><!-- .l-article -->
