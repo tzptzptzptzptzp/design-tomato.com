@@ -7,7 +7,8 @@
         border-radius: 25px;
         background-image: url(../images/bg/tmt-bg.jpg);
         text-align: center;
-        &::before, &::after {
+        &::before,
+        &::after {
             display: block;
             position: absolute;
             top: 0;
@@ -15,8 +16,29 @@
             width: 100%;
             height: 100%;
             border-radius: 25px;
-            content: '';
-            clip-path: polygon(20% 10%, 0% 10%, 0 100%, 25% 100%, 25% 80%, 50% 80%, 50% 100%, 75% 100%, 75% 85%, 100% 85%, 100% 25%, 80% 25%, 80% 10%,  100% 10%, 100% 0, 70% 0, 70% 20%, 45% 20%, 45% 0, 20% 0);
+            content: "";
+            clip-path: polygon(
+                20% 10%,
+                0% 10%,
+                0 100%,
+                25% 100%,
+                25% 80%,
+                50% 80%,
+                50% 100%,
+                75% 100%,
+                75% 85%,
+                100% 85%,
+                100% 25%,
+                80% 25%,
+                80% 10%,
+                100% 10%,
+                100% 0,
+                70% 0,
+                70% 20%,
+                45% 20%,
+                45% 0,
+                20% 0
+            );
             pointer-events: none;
         }
         &::before {
@@ -32,7 +54,7 @@
         width: auto;
         max-height: 60px;
         margin-bottom: 1.5rem;
-        filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .5));
+        filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
     }
     &__ex-container {
         position: relative;
@@ -44,7 +66,7 @@
             height: auto;
             border-radius: 10px;
             object-fit: cover;
-            filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .5));
+            filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
         }
         picture:first-of-type img {
             top: 0;
@@ -83,7 +105,7 @@
         position: relative;
         overflow: hidden;
         border-radius: 10px;
-        transition: .5s;
+        transition: 0.5s;
         &:hover {
             transform: scale(1.05);
         }
@@ -97,7 +119,7 @@
 .p-pickup {
     color: white;
     &__column {
-        transition: .5s;
+        transition: 0.5s;
         &:hover {
             transform: scale(1.05);
         }
@@ -124,7 +146,7 @@
     &__content {
         width: 100%;
         border-right: 5px solid white;
-        border-left: 5px solid white;        
+        border-left: 5px solid white;
     }
     h3 {
         margin-bottom: 1rem;
@@ -151,9 +173,9 @@
         padding: 1rem;
         border: 2px solid white;
         border-radius: 99px;
-        background-color: rgba(255,255,255,.2);
+        background-color: rgba(255, 255, 255, 0.2);
         color: white;
-        transition: .3s;
+        transition: 0.3s;
         &:hover {
             letter-spacing: 2px;
         }
@@ -171,7 +193,7 @@
         visibility: hidden;
         width: 100%;
         opacity: 0;
-        transition: .5s;
+        transition: 0.5s;
         &.select {
             transform: none;
             visibility: visible;
@@ -185,7 +207,7 @@
         border-radius: 25px;
         background-color: var(--sub-color);
         color: white;
-        transition: .3s;
+        transition: 0.3s;
         &:hover {
             border-color: var(--main-color);
         }
@@ -193,7 +215,7 @@
             display: -webkit-box;
             overflow: hidden;
             height: 5rem;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             font-size: 1.8rem;
             line-height: 1.5;
             -webkit-line-clamp: 2;
@@ -203,13 +225,13 @@
             font-size: 1.3rem;
             &::before {
                 display: inline-block;
-                width: .75em;
-                height: .75em;
-                margin-right: .3rem;
+                width: 0.75em;
+                height: 0.75em;
+                margin-right: 0.3rem;
                 background-color: white;
                 mask: url(../images/clock.svg);
                 mask-size: cover;
-                content: '';
+                content: "";
             }
         }
     }
@@ -219,7 +241,7 @@
         background-image: url(../images/bg/tmt-bg.jpg);
         a {
             span {
-                transition: .1s;
+                transition: 0.1s;
             }
             &:hover span {
                 border-bottom: 3px solid var(--font-color);
@@ -235,7 +257,7 @@
         aspect-ratio: 14 / 4;
     }
     a {
-        transition: .3s;
+        transition: 0.3s;
         &:hover {
             transform: scale(1.05);
         }
@@ -246,7 +268,7 @@
     position: relative;
     z-index: 2;
     color: white;
-    transition:0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
     &:before {
         position: absolute;
         left: 0;
@@ -256,7 +278,8 @@
         transform-origin: right;
         width: 100%;
         height: 80px;
-        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200%25' height='100%25'%3E%3Cdefs%3E%3Cstyle%3E .wave%7B stroke:white; stroke-width:2.5; stroke-linecap:square; %7D %3C/style%3E%3C/defs%3E%3Cpattern id='wavePattern' x='0' y='0' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cpath fill='none' class='wave' d='M 0 40 Q 20 40 40 40 Q 60 40 80 40' /%3E%3C/pattern%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23wavePattern)'%3E%3C/rect%3E%3C/svg%3E")0px 50% / 80px 80px repeat-x;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200%25' height='100%25'%3E%3Cdefs%3E%3Cstyle%3E .wave%7B stroke:white; stroke-width:2.5; stroke-linecap:square; %7D %3C/style%3E%3C/defs%3E%3Cpattern id='wavePattern' x='0' y='0' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cpath fill='none' class='wave' d='M 0 40 Q 20 40 40 40 Q 60 40 80 40' /%3E%3C/pattern%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23wavePattern)'%3E%3C/rect%3E%3C/svg%3E")
+            0px 50% / 80px 80px repeat-x;
         content: "";
         pointer-events: none;
         transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1);
@@ -264,8 +287,9 @@
     &:hover {
         &:before {
             transform: scaleX(1);
-            transform-origin:left;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200%25' height='100%25'%3E%3Cdefs%3E%3Cstyle%3E .wave%7B animation:wave 1s ease-in-out infinite alternate; animation-delay:-0.25s; stroke:white; stroke-width:2.5; stroke-linecap:square; %7D @keyframes wave%7B to%7B d:path('M 0 40 Q 20 42.5 40 40 Q 60 37.5 80 40'); %7D %7D %3C/style%3E%3C/defs%3E%3Cpattern id='wavePattern' x='0' y='0' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cpath fill='none' class='wave' d='M 0 40 Q 20 37.5 40 40 Q 60 42.5 80 40' /%3E%3C/pattern%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23wavePattern)'%3E%3C/rect%3E%3C/svg%3E")0px 50% / 80px 80px repeat-x;
+            transform-origin: left;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200%25' height='100%25'%3E%3Cdefs%3E%3Cstyle%3E .wave%7B animation:wave 1s ease-in-out infinite alternate; animation-delay:-0.25s; stroke:white; stroke-width:2.5; stroke-linecap:square; %7D @keyframes wave%7B to%7B d:path('M 0 40 Q 20 42.5 40 40 Q 60 37.5 80 40'); %7D %7D %3C/style%3E%3C/defs%3E%3Cpattern id='wavePattern' x='0' y='0' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cpath fill='none' class='wave' d='M 0 40 Q 20 37.5 40 40 Q 60 42.5 80 40' /%3E%3C/pattern%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23wavePattern)'%3E%3C/rect%3E%3C/svg%3E")
+                0px 50% / 80px 80px repeat-x;
             animation: waving 3s linear infinite;
             transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
             @keyframes waving {
@@ -284,7 +308,7 @@
         overflow: hidden;
         height: 0;
         opacity: 0;
-        transition: .5s;
+        transition: 0.5s;
     }
     &__check:checked + &__label + &__content {
         height: auto;
@@ -295,14 +319,14 @@
     text-align: center;
     img {
         width: auto;
-        filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, .5));
+        filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
     }
 }
 // RESPONSIVE
 @media screen and (min-width: 600px) {
     .p-plan {
         &__column {
-            width:33.3%;
+            width: 33.3%;
         }
         &__headline {
             max-height: calc(100vw / 21);
@@ -320,12 +344,12 @@
             margin: 1rem 2rem 2rem;
         }
         &__thumbnail {
-            filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, .5));
-        }    
+            filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.5));
+        }
     }
     .p-news-blog {
         &__column {
-            width:calc(33.3% - 2rem);
+            width: calc(33.3% - 2rem);
             margin: 1rem;
             padding: 2rem;
         }
@@ -346,7 +370,7 @@
         img {
             max-height: 170px;
         }
-    }    
+    }
 }
 @media screen and (max-width: 599px) {
     .p-plan {
@@ -358,14 +382,14 @@
     .p-site {
         &__column {
             width: calc(50% - 1rem);
-            margin: .5rem;
+            margin: 0.5rem;
         }
     }
     .p-pickup {
         &__column {
-            transform:translateX(-2%);
+            transform: translateX(-2%);
             width: calc(50% - 1rem);
-            margin: .5rem;
+            margin: 0.5rem;
         }
         h3 {
             display: none;
@@ -384,7 +408,7 @@
     }
     .p-news-blog {
         &__column {
-            margin: .5rem 1.25rem;
+            margin: 0.5rem 1.25rem;
             padding: 2rem 1rem;
         }
     }
@@ -392,10 +416,10 @@
         &__content {
             font-size: 1.75rem;
         }
-    }    
+    }
     .c-headline {
         img {
             max-height: 70px;
         }
-    }    
+    }
 }

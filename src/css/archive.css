@@ -5,10 +5,10 @@
   src: url(../fonts/MPLUSRoundedMinify.woff2) format("woff2");
 }
 :root {
-  --main-color: #F76;
-  --sub-color: #6EA;
+  --main-color: #f76;
+  --sub-color: #6ea;
   --font-color: #666;
-  --bg-color: #FFF;
+  --bg-color: #fff;
   --user-red: red;
   --user-blue: blue;
   --user-green: green;
@@ -19,6 +19,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -89,37 +90,37 @@ img {
 
 @-webkit-keyframes color-change {
   0%, 100% {
-    background-color: #4D95FF;
+    background-color: #4d95ff;
   }
   20% {
     background-color: var(--main-color);
   }
   40% {
-    background-color: #FFEE80;
+    background-color: #ffee80;
   }
   60% {
     background-color: var(--sub-color);
   }
   80% {
-    background-color: #6E59FF;
+    background-color: #6e59ff;
   }
 }
 
 @keyframes color-change {
   0%, 100% {
-    background-color: #4D95FF;
+    background-color: #4d95ff;
   }
   20% {
     background-color: var(--main-color);
   }
   40% {
-    background-color: #FFEE80;
+    background-color: #ffee80;
   }
   60% {
     background-color: var(--sub-color);
   }
   80% {
-    background-color: #6E59FF;
+    background-color: #6e59ff;
   }
 }
 /*---------- COMMON ----------*/
@@ -139,7 +140,7 @@ img {
 }
 .l-wrapper::after {
   z-index: -7;
-  background-color: #4D95FF;
+  background-color: #4d95ff;
   filter: opacity(0.5);
 }
 
@@ -457,7 +458,9 @@ header .waves {
   background-color: var(--sub-color);
   color: white;
 }
-.p-pagination > a, .p-pagination > p, .p-pagination > div {
+.p-pagination > a,
+.p-pagination > p,
+.p-pagination > div {
   display: flex;
   align-items: center;
   justify-content: center;

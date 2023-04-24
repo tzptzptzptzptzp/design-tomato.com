@@ -7,7 +7,8 @@
         border-radius: 25px;
         background-image: url(../images/bg/tmt-bg.jpg);
         text-align: center;
-        &::before, &::after {
+        &::before,
+        &::after {
             display: block;
             position: absolute;
             top: 0;
@@ -15,8 +16,29 @@
             width: 100%;
             height: 100%;
             border-radius: 25px;
-            content: '';
-            clip-path: polygon(20% 10%, 0% 10%, 0 100%, 25% 100%, 25% 80%, 50% 80%, 50% 100%, 75% 100%, 75% 85%, 100% 85%, 100% 25%, 80% 25%, 80% 10%,  100% 10%, 100% 0, 70% 0, 70% 20%, 45% 20%, 45% 0, 20% 0);
+            content: "";
+            clip-path: polygon(
+                20% 10%,
+                0% 10%,
+                0 100%,
+                25% 100%,
+                25% 80%,
+                50% 80%,
+                50% 100%,
+                75% 100%,
+                75% 85%,
+                100% 85%,
+                100% 25%,
+                80% 25%,
+                80% 10%,
+                100% 10%,
+                100% 0,
+                70% 0,
+                70% 20%,
+                45% 20%,
+                45% 0,
+                20% 0
+            );
             pointer-events: none;
         }
         &::before {
@@ -32,7 +54,7 @@
         width: auto;
         max-height: 60px;
         margin-bottom: 1.5rem;
-        filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .5));
+        filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
     }
     &__ex-container {
         position: relative;
@@ -44,7 +66,7 @@
             height: auto;
             border-radius: 10px;
             object-fit: cover;
-            filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .5));
+            filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
         }
         picture:first-of-type img {
             top: 0;
@@ -90,7 +112,8 @@
             padding: 2em 2em 2.5em;
             border-radius: 25px;
             background-image: url(../images/bg/tmt-bg.jpg);
-            &::before, &::after {
+            &::before,
+            &::after {
                 display: block;
                 position: absolute;
                 top: 0;
@@ -98,8 +121,29 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 25px;
-                content: '';
-                clip-path: polygon(20% 10%, 0% 10%, 0 100%, 25% 100%, 25% 80%, 50% 80%, 50% 100%, 75% 100%, 75% 85%, 100% 85%, 100% 25%, 80% 25%, 80% 10%,  100% 10%, 100% 0, 70% 0, 70% 20%, 45% 20%, 45% 0, 20% 0);
+                content: "";
+                clip-path: polygon(
+                    20% 10%,
+                    0% 10%,
+                    0 100%,
+                    25% 100%,
+                    25% 80%,
+                    50% 80%,
+                    50% 100%,
+                    75% 100%,
+                    75% 85%,
+                    100% 85%,
+                    100% 25%,
+                    80% 25%,
+                    80% 10%,
+                    100% 10%,
+                    100% 0,
+                    70% 0,
+                    70% 20%,
+                    45% 20%,
+                    45% 0,
+                    20% 0
+                );
                 pointer-events: none;
             }
             &::before {
@@ -116,16 +160,15 @@
             font-size: 2.8rem;
             line-height: 1.3;
             text-align: center;
-            text-shadow: 
-            var(--main-color) 3px 0px,  var(--main-color) -3px 0px,
-            var(--main-color) 0px -3px, var(--main-color) 0px 3px,
-            var(--main-color) 3px 3px , var(--main-color) -3px 3px,
-            var(--main-color) 3px -3px, var(--main-color) -3px -3px,
-            var(--main-color) 1px 3px,  var(--main-color) -1px 3px,
-            var(--main-color) 1px -3px, var(--main-color) -1px -3px,
-            var(--main-color) 3px 1px,  var(--main-color) -3px 1px,
-            var(--main-color) 3px -1px, var(--main-color) -3px -1px;
-            filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .5));
+            text-shadow: var(--main-color) 3px 0px, var(--main-color) -3px 0px,
+                var(--main-color) 0px -3px, var(--main-color) 0px 3px,
+                var(--main-color) 3px 3px, var(--main-color) -3px 3px,
+                var(--main-color) 3px -3px, var(--main-color) -3px -3px,
+                var(--main-color) 1px 3px, var(--main-color) -1px 3px,
+                var(--main-color) 1px -3px, var(--main-color) -1px -3px,
+                var(--main-color) 3px 1px, var(--main-color) -3px 1px,
+                var(--main-color) 3px -1px, var(--main-color) -3px -1px;
+            filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
         }
         &__images {
             display: flex;
@@ -144,7 +187,7 @@
                 height: auto;
                 aspect-ratio: 16 / 9;
                 border-radius: 15px;
-                filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .5));
+                filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
             }
             div:nth-of-type(2) img {
                 transform: scale(1.3);
@@ -192,7 +235,7 @@
     text-align: center;
     img {
         width: auto;
-        filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, .5));
+        filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.5));
     }
 }
 .c-campaign {
@@ -203,7 +246,7 @@
         overflow: hidden;
         height: 0;
         opacity: 0;
-        transition: .5s;
+        transition: 0.5s;
     }
     &__check:checked + &__label + &__content {
         height: auto;
@@ -213,7 +256,7 @@
 @media screen and (min-width: 600px) {
     .p-plan {
         &__column {
-            width:33.3%;
+            width: 33.3%;
         }
         &__headline {
             max-height: calc(100vw / 21);
@@ -223,7 +266,7 @@
         img {
             max-height: 170px;
         }
-    }    
+    }
 }
 @media screen and (max-width: 599px) {
     .p-plan {
@@ -238,7 +281,7 @@
                 margin: 0 auto 3rem;
             }
             &__content {
-                padding:2em 1.25em 2.5em;
+                padding: 2em 1.25em 2.5em;
             }
             &__title {
                 font-size: 2rem;
@@ -246,7 +289,7 @@
             }
             &__images {
                 width: 100%;
-                padding: 0 .5rem;
+                padding: 0 0.5rem;
                 div:nth-of-type(2) img {
                     transform: scale(2);
                 }
@@ -266,5 +309,5 @@
         img {
             max-height: 70px;
         }
-    }    
+    }
 }

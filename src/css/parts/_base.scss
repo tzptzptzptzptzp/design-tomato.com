@@ -5,10 +5,10 @@
     src: url(../fonts/MPLUSRoundedMinify.woff2) format("woff2");
 }
 :root {
-    --main-color: #F76;
-    --sub-color: #6EA;
+    --main-color: #f76;
+    --sub-color: #6ea;
     --font-color: #666;
-    --bg-color: #FFF;
+    --bg-color: #fff;
     --user-red: red;
     --user-blue: blue;
     --user-green: green;
@@ -16,13 +16,15 @@
     --user-white: white;
     --user-black: #333;
 }
-html{
+html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
-body{
+body {
     color: var(--font-color);
-    font-family: "mplus", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
-    font-size:1.6rem;
+    font-family: "mplus", "Helvetica Neue", "Helvetica", "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 1.6rem;
     font-weight: 900;
     line-height: 1;
 }
@@ -31,7 +33,8 @@ img {
 }
 /*---------- ANIMATION ----------*/
 @keyframes float {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0px);
     }
     25% {
@@ -46,55 +49,58 @@ img {
 }
 @keyframes fadeUp {
     0% {
-        opacity:0;
-        transform:translateY(5%)
-    } 100% {
-        opacity:1;
-        transform:translateY(0%)
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
     }
 }
 .a-fadeUp {
-    -webkit-animation:fadeUp .5s .2s both;
-    animation:fadeUp .5s .2s both
+    -webkit-animation: fadeUp 0.5s 0.2s both;
+    animation: fadeUp 0.5s 0.2s both;
 }
 @keyframes color-change {
-    0%, 100% {
-        background-color: #4D95FF;
+    0%,
+    100% {
+        background-color: #4d95ff;
     }
     20% {
         background-color: var(--main-color);
     }
     40% {
-        background-color: #FFEE80;
+        background-color: #ffee80;
     }
     60% {
         background-color: var(--sub-color);
     }
     80% {
-        background-color: #6E59FF;
+        background-color: #6e59ff;
     }
 }
 /*---------- COMMON ----------*/
 // WRAPPER
 .l-wrapper {
-    &::before, &::after {
+    &::before,
+    &::after {
         position: fixed;
         left: 0;
         top: 0;
         width: 100%;
         height: 100vh;
         content: "";
-        transition: .3s;  
+        transition: 0.3s;
     }
     &::before {
         z-index: -9;
         background: url(../images/bg/tmt-pattern-r.png) repeat center center;
-        background-size: 50%;  
+        background-size: 50%;
     }
     &::after {
         z-index: -7;
-        background-color: #4D95FF;
-        filter: opacity(.5);
+        background-color: #4d95ff;
+        filter: opacity(0.5);
     }
 }
 // CONTAINER
@@ -105,7 +111,7 @@ img {
 // MENU
 .p-menu {
     transform: translateY(-135%);
-    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, .3));
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.3));
     &.active {
         transform: none;
     }
@@ -126,7 +132,7 @@ img {
             height: 3.5px;
             border-radius: 2px;
             background-color: white;
-            transition: .3s;
+            transition: 0.3s;
             &:first-child {
                 transform: translate(-50%, -50%) rotate(45deg);
             }
@@ -141,10 +147,10 @@ img {
     input {
         border: 3px solid var(--font-color);
         border-right: none;
-        border-radius: 5px 0 0 5px;    
+        border-radius: 5px 0 0 5px;
     }
     button {
-        border-radius: 0 5px 5px 0;    
+        border-radius: 0 5px 5px 0;
     }
 }
 // FOOTER
@@ -159,15 +165,15 @@ img {
     background: var(--main-color);
     border-radius: 999px;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     &:hover {
         letter-spacing: 2px;
-    }    
+    }
 }
 .c-sitemap {
     li {
-        margin-bottom: .8rem;
-        transition: .3s;
+        margin-bottom: 0.8rem;
+        transition: 0.3s;
         &:hover {
             letter-spacing: 2px;
         }
@@ -176,7 +182,7 @@ img {
         width: 1em;
         height: 1em;
         stroke: white;
-        fill: white
+        fill: white;
     }
 }
 // COMPONENT
@@ -197,7 +203,7 @@ img {
                 transform: translate(-50%, 70%);
                 width: 25px;
                 height: 25px;
-                content: '';
+                content: "";
                 clip-path: polygon(50% 80%, 0 0, 100% 0);
             }
         }
@@ -227,7 +233,7 @@ img {
             transform: translate(-60%, -50%);
             width: 25px;
             height: 25px;
-            content: '';
+            content: "";
             clip-path: polygon(100% 0, 20% 50%, 100% 100%);
         }
     }
@@ -240,7 +246,7 @@ img {
                 left: auto;
                 transform: translate(60%, -50%);
                 clip-path: polygon(0 0, 0 100%, 80% 50%);
-            }    
+            }
         }
     }
 }
@@ -257,7 +263,7 @@ img {
         height: 2rem;
         stroke: currentColor;
         fill: currentColor;
-        transition: .2s linear;
+        transition: 0.2s linear;
         &:hover {
             transform: rotate(-25deg);
         }
@@ -269,7 +275,7 @@ img {
     border-radius: 99px;
     color: white;
     text-align: center;
-    transition: .3s;
+    transition: 0.3s;
     &.btn-xl {
         padding: 2rem 2.5rem;
         font-size: 1.2em;
@@ -288,18 +294,18 @@ img {
 // WAVES
 .waves {
     height: 39px;
-	margin: 0;
-	display: block;
-	transform: translateY(1px);
+    margin: 0;
+    display: block;
+    transform: translateY(1px);
 }
 header .waves {
-	position: absolute;
-	bottom: 0;
-	transform: rotate(180deg) translateY(1px)!important;
-	transform-origin: bottom;
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg) translateY(1px) !important;
+    transform-origin: bottom;
 }
 .wave > use {
-    animation: wave 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    animation: wave 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 .wave > use:nth-child(1) {
     animation-delay: -2s;
@@ -319,10 +325,10 @@ header .waves {
 }
 @keyframes wave {
     0% {
-        transform: translate3d(-90px,0,0);
+        transform: translate3d(-90px, 0, 0);
     }
-    100% { 
-        transform: translate3d(85px,0,0);
+    100% {
+        transform: translate3d(85px, 0, 0);
     }
 }
 // RESPONSIVE
@@ -331,7 +337,8 @@ header .waves {
 @media screen and (max-width: 599px) {
     .l-wrapper {
         &::before {
-            background: url(../images/bg/tmt-pattern-r-sp.png) repeat center center;
+            background: url(../images/bg/tmt-pattern-r-sp.png) repeat center
+                center;
         }
     }
     .c-balloon {
@@ -350,7 +357,7 @@ header .waves {
                     bottom: 0;
                     left: 50%;
                     transform: translate(-50%, 70%);
-                    clip-path: polygon(50% 80%, 0 0, 100% 0);    
+                    clip-path: polygon(50% 80%, 0 0, 100% 0);
                 }
             }
         }
@@ -362,14 +369,13 @@ header .waves {
                 margin-left: 0;
                 padding: 2.7rem 2rem;
                 border-radius: 9999px;
-            }    
+            }
         }
     }
     .c-sns-link {
         svg {
             width: 3rem;
-            height: 3rem;    
+            height: 3rem;
         }
     }
-    
 }
