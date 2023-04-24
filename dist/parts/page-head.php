@@ -32,6 +32,18 @@ if (is_page("contact")){
 } elseif (is_page("request")) {
     $page = "request";
     $alt = "ご依頼の前に";
+} else if (is_page("contract")){
+    $page = "contract";
+    $alt = "各種ご契約の手順";
+} else if (is_page("domain")){
+    $page = "domain";
+    $alt = "ドメインの取得";
+} else if (is_page("ssl")){
+    $page = "ssl";
+    $alt = "サイトのSSL設定";
+} elseif (is_page("wordpress")) {
+    $page = "wordpress";
+    $alt = "Wordpressのインストール";
 };
 ?>
 
