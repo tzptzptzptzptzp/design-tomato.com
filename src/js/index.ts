@@ -1,28 +1,30 @@
-import * as loader from "./module/loader"
+import * as loader from "./module/loader";
 addEventListener("load", loader.loaded);
-import * as soda from "./module/soda"
+import * as soda from "./module/soda";
 addEventListener("load", soda.init);
-import * as header from "./module/header"
+import * as header from "./module/header";
 addEventListener("scroll", header.active);
-import * as menu from "./module/menu"
-for ( let i = 0; i < menu.openBtn.length ; i++ ) {
+import * as menu from "./module/menu";
+for (let i = 0; i < menu.openBtn.length; i++) {
     menu.openBtn[i].addEventListener("click", menu.open);
-};
+}
 menu.closeBtn.addEventListener("click", menu.close);
-import * as search from "./module/searchform"
-for ( let i = 0; i < search.openBtn.length ; i++ ) {
+import * as search from "./module/searchform";
+for (let i = 0; i < search.openBtn.length; i++) {
     search.openBtn[i].addEventListener("click", search.open);
-};
+}
 search.closeBtn.addEventListener("click", search.close);
 /*----------  ----------*/
 let container = document.querySelectorAll<HTMLElement>(".js-nb-container")!;
 let switcher = document.querySelectorAll(".js-nb-switcher")!;
 let tab = document.querySelectorAll(".js-nb-tab")!;
 (function () {
-    container[0].style.height = tab[0].clientHeight + "px";
-}());
+    setTimeout(() => {
+        container[0].style.height = tab[0].clientHeight + "px";
+    }, 500);
+})();
 for (let i = 0; i < switcher.length; i++) {
-    switcher[i].addEventListener( "click", function()  {
+    switcher[i].addEventListener("click", function () {
         let selected = document.querySelectorAll(".select");
         for (let i = 0; i < selected.length; i++) {
             selected[i].classList.remove("select");
