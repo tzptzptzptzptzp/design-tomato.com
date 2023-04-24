@@ -536,6 +536,7 @@ header .waves {
   .p-content {
     margin: 1.5rem 1.25rem;
     padding: 2.5rem;
+    font-size: 1.6rem;
     line-height: 1.8;
   }
   .p-content p,
@@ -546,10 +547,10 @@ header .waves {
     margin-bottom: 3rem;
   }
   .p-content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .p-content h3 {
-    font-size: 1.8rem;
+    font-size: 1.1 0.6rem;
   }
   .p-content h4 {
     font-size: 1.6rem;
