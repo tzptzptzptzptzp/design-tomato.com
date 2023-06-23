@@ -24,7 +24,9 @@
 
                 <article class="l-article flex ml:mb-24 ml:mx-8 s:mb-6">
                     <div class="p-content relative w-full max-w-1200 m-auto ml:-mt-10 ml:p-28 s:p-4">
-                        <?php the_content(); ?>
+                        <div class="w-[90%] s:w-full m-auto">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 </article><!-- .l-article -->
                 

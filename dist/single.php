@@ -37,7 +37,9 @@
                             <img class="w-[90%] h-auto m-auto mt-12 rounded-25 object-cover" src="<?php if ( is_mobile() ) { the_post_thumbnail_url( "medium" ); } else { the_post_thumbnail_url( "full" ); } ?>" alt="サムネイル" width="1000" height="800" />
                             <?php endif; ?>
                         </div><!-- .p-article__thumbnail -->
-                        <?php the_content(); ?>
+                        <div class="w-[90%] s:w-full m-auto">
+                            <?php the_content(); ?>
+                        </div>
                     </div>
                 </article><!-- .l-article -->
                 
