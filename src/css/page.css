@@ -439,7 +439,8 @@ header .waves {
   border-radius: 25px;
   background-image: url(../images/bg/tmt-bg.jpg);
   font-size: 1.8rem;
-  line-height: 1.3;
+  letter-spacing: 1px;
+  line-height: 2;
 }
 .p-content::before, .p-content::after {
   display: block;
@@ -537,7 +538,6 @@ header .waves {
     margin: 1.5rem 1.25rem;
     padding: 2.5rem;
     font-size: 1.6rem;
-    line-height: 1.8;
   }
   .p-content p,
   .p-content h2,

@@ -4,7 +4,8 @@
     border-radius: 25px;
     background-image: url(../images/bg/tmt-bg.jpg);
     font-size: 1.8rem;
-    line-height: 1.3;
+    letter-spacing: 1px;
+    line-height: 2;
     &::before,
     &::after {
         display: block;
@@ -85,7 +86,6 @@
         margin: 1.5rem 1.25rem;
         padding: 2.5rem;
         font-size: 1.6rem;
-        line-height: 1.8;
         p,
         h2,
         h3,
